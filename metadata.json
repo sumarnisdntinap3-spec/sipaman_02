@@ -1,0 +1,6 @@
+{
+  "name": "Si Paman - Penanganan Masalah Anak Dikdas Magetan",
+  "description": "Sistem Informasi Penanganan Masalah Anak (Si Paman) Bidang Dikdas Dinas Dikpora Kabupaten Magetan, Jawa Timur",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,81 @@
+{
+  "entities": {
+    "reports": {
+      "title": "Incident Reports",
+      "description": "Laporan Kasus dan Masalah Anak",
+      "type": "object",
+      "properties": {
+        "nomorLaporan": { "type": "string" },
+        "sekolahId": { "type": "string" },
+        "namaSekolah": { "type": "string" },
+        "kecamatan": { "type": "string" },
+        "tanggalKejadian": { "type": "string" },
+        "waktuKejadian": { "type": "string" },
+        "kategori": { "type": "string" },
+        "urgensi": { "type": "string" },
+        "status": { "type": "string" },
+        "deskripsiKronologi": { "type": "string" },
+        "tindakanAwalSekolah": { "type": "string" },
+        "siswa": { "type": "object" },
+        "buktiAwal": { "type": "array" },
+        "perkembanganLogs": { "type": "array" },
+        "disposisiDinas": { "type": "object" },
+        "catatanPenyelesaian": { "type": "string" },
+        "tglSelesai": { "type": "string" }
+      },
+      "required": ["nomorLaporan", "sekolahId", "namaSekolah", "kategori", "status"]
+    },
+    "schools": {
+      "title": "Schools Data",
+      "description": "Daftar Sekolah dan Akses TPPK",
+      "type": "object",
+      "properties": {
+        "npsn": { "type": "string" },
+        "namaSekolah": { "type": "string" },
+        "jenjang": { "type": "string" },
+        "kecamatan": { "type": "string" },
+        "alamat": { "type": "string" },
+        "namaKepsek": { "type": "string" },
+        "noHpKepsek": { "type": "string" },
+        "namaKetuaTppk": { "type": "string font-mono" },
+        "noHpTppk": { "type": "string" },
+        "password": { "type": "string" },
+        "isActive": { "type": "boolean" }
+      },
+      "required": ["npsn", "namaSekolah"]
+    },
+    "agencies": {
+      "title": "Agencies Data",
+      "description": "Daftar Lembaga Mitra",
+      "type": "object",
+      "properties": {
+        "namaLembaga": { "type": "string" },
+        "kategori": { "type": "string" },
+        "penanggungJawab": { "type": "string" },
+        "kontakDarurat": { "type": "string" },
+        "alamat": { "type": "string" }
+      },
+      "required": ["namaLembaga"]
+    },
+    "kabidConfig": {
+      "title": "Kabid Config",
+      "description": "Konfigurasi Pejabat Kabid",
+      "type": "object",
+      "properties": {
+        "namaKabid": { "type": "string" },
+        "nipKabid": { "type": "string" },
+        "jabatan": { "type": "string" },
+        "pangkatGolongan": { "type": "string" }
+      },
+      "required": ["namaKabid", "nipKabid"]
+    },
+    "appConfig": {
+      "title": "App Config",
+      "description": "Konfigurasi Aplikasi",
+      "type": "object",
+      "properties": {
+        "customLogoUrl": { "type": "string" }
+      }
+    }
+  }
+}
